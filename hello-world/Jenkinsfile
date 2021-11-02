@@ -26,11 +26,7 @@ pipeline {
                 echo 'Run only crucial integration tests from the source code' 
             }
         }
-         stage('Static Analysis') {
-            steps {
-                echo 'Run the static analysis to the code' 
-            }
-        }
+      
              
         stage('Publish Artifacts') {
             steps {
