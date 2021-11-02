@@ -31,7 +31,12 @@ pipeline {
                 echo 'unit test' 
             }
         }
-             
+       stage('Parameter') {
+            steps {
+                echo 'Integration test' 
+            }
+        }  
+        
         stage('Publish Artifacts') {
             steps {
                 echo 'Save the assemblies generated from the compilation' 
